@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		391416352731347000524CBE /* CachingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391416342731347000524CBE /* CachingManager.swift */; };
+		39141638273135EE00524CBE /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39141637273135ED00524CBE /* Trip.swift */; };
 		39CB0579273036BD00C78E7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB0578273036BD00C78E7B /* AppDelegate.swift */; };
 		39CB057B273036BD00C78E7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB057A273036BD00C78E7B /* SceneDelegate.swift */; };
 		39CB057D273036BD00C78E7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB057C273036BD00C78E7B /* ViewController.swift */; };
@@ -16,6 +18,7 @@
 		39CB0590273036C100C78E7B /* WalkingTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB058F273036C100C78E7B /* WalkingTrackerTests.swift */; };
 		39CB059A273036C100C78E7B /* WalkingTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB0599273036C100C78E7B /* WalkingTrackerUITests.swift */; };
 		39CB059C273036C100C78E7B /* WalkingTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB059B273036C100C78E7B /* WalkingTrackerUITestsLaunchTests.swift */; };
+		39CB05A927304BAD00C78E7B /* PedometerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB05A827304BAD00C78E7B /* PedometerManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		391416342731347000524CBE /* CachingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachingManager.swift; sourceTree = "<group>"; };
+		39141637273135ED00524CBE /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		39CB0575273036BD00C78E7B /* WalkingTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalkingTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39CB0578273036BD00C78E7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39CB057A273036BD00C78E7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +54,7 @@
 		39CB0595273036C100C78E7B /* WalkingTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalkingTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39CB0599273036C100C78E7B /* WalkingTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkingTrackerUITests.swift; sourceTree = "<group>"; };
 		39CB059B273036C100C78E7B /* WalkingTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkingTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		39CB05A827304BAD00C78E7B /* PedometerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		391416332731343500524CBE /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				39CB05A827304BAD00C78E7B /* PedometerManager.swift */,
+				391416342731347000524CBE /* CachingManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		39141636273135CE00524CBE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				39141637273135ED00524CBE /* Trip.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		39141639273142AE00524CBE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				39CB0578273036BD00C78E7B /* AppDelegate.swift */,
+				39CB057A273036BD00C78E7B /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		39CB056C273036BD00C78E7B = {
 			isa = PBXGroup;
 			children = (
@@ -99,8 +131,9 @@
 		39CB0577273036BD00C78E7B /* WalkingTracker */ = {
 			isa = PBXGroup;
 			children = (
-				39CB0578273036BD00C78E7B /* AppDelegate.swift */,
-				39CB057A273036BD00C78E7B /* SceneDelegate.swift */,
+				39141639273142AE00524CBE /* App */,
+				39141636273135CE00524CBE /* Model */,
+				391416332731343500524CBE /* Manager */,
 				39CB057C273036BD00C78E7B /* ViewController.swift */,
 				39CB057E273036BD00C78E7B /* Main.storyboard */,
 				39CB0581273036C000C78E7B /* Assets.xcassets */,
@@ -258,7 +291,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39141638273135EE00524CBE /* Trip.swift in Sources */,
 				39CB057D273036BD00C78E7B /* ViewController.swift in Sources */,
+				391416352731347000524CBE /* CachingManager.swift in Sources */,
+				39CB05A927304BAD00C78E7B /* PedometerManager.swift in Sources */,
 				39CB0579273036BD00C78E7B /* AppDelegate.swift in Sources */,
 				39CB057B273036BD00C78E7B /* SceneDelegate.swift in Sources */,
 			);
@@ -439,14 +475,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7CDHS6V78T;
+				DEVELOPMENT_TEAM = P5GJ5H8EL5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WalkingTracker/Info.plist;
+				INFOPLIST_KEY_NSMotionUsageDescription = "We need permetion to update your data";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -467,14 +505,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7CDHS6V78T;
+				DEVELOPMENT_TEAM = P5GJ5H8EL5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WalkingTracker/Info.plist;
+				INFOPLIST_KEY_NSMotionUsageDescription = "We need permetion to update your data";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
